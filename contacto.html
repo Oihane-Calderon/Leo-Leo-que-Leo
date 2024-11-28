@@ -1,0 +1,77 @@
+<!-- ***************************************
+  LENGUAJES DE MARCA Y SISTEMAS DE GESTION DE LA INFORMACIÓN
+  UD02 - TAREA EVALUATIVA 02: SITIO WEB
+  Oihane Calderón Beramendi
+  Fecha : 
+  Autoevaluación:  cambiar**************************
+  *********************************************
+  -->
+
+
+  <!DOCTYPE html>
+  <html lang="es">
+  
+  <head>
+      <meta charset="UTF-8">
+      <meta name="keysword" content="libros, recomendaciones, recomendaci&oacute;n">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>LeoLeoqueLeo</title>
+      <link rel="icon" type="image/x-icon" href="./imagenes/favicon.PNG">
+      <!--Enlace a hoja de estilos normalize-->
+      <link rel="stylesheet" href="./css/normalize.css">
+      <!--Enlace a hoja de estilos propios-->
+      <link rel="stylesheet" href="./css/styles.css">
+  </head>
+  
+  <body>
+     <!--Cabecera con logo y nombre -->
+     <header>
+      <img class="logo" src="./imagenes/buho.png" width="170px" alt="Logo de Leo Leo que Lees">      
+      <h2> Leo Leo ... ¿qué leo</h2>
+    </header> 
+  
+    <!--Menú de navegación -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="best-sellers.html">Best-sellers</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+     <!-- cuerpo principal -->
+  <main>
+    
+    <section class="formulario-flex">
+     <fieldset> <!-- Agrupa los elementos de forma-->
+      <legend><h2>Contacto</h2></legend>
+      <form action="mailto:ocalderon@birt.eus" method="post">
+        <p>Nombre:</p>
+        <input type="text" name="nombre" class="form-item"> <br>
+        <p>Apellidos:</p>
+        <input type="text" name="apellidos" class="form-item"> <br>
+        <p>e-mail:</p>
+        <input type="email" name="email" class="form-item"> <br>
+        <p>Fecha de nacimiento:</p>
+        <input type="date" class="caja-fecha" name="fecha-nac" id="nacimiento" value="1980-01-01" min="1970-01-01" max="2014-01-01"> <br><br>
+        <p>Motivo de contacto:</p>
+        <select name="motivo" class="form-item">
+          <option value="Consulta">Consulta</option>
+          <option value="Queja">Queja</option>
+          <option value="Sugerencia">Sugerencia</option>
+        </select> <br>
+        <p>Mensaje:</p>
+        <textarea name="mensaje" class="form-item"></textarea><br><br>
+        <input type="submit" value="enviar" class="boton">
+      </fieldset>
+      </form>
+    </section>
+
+    <footer>
+      <img class="posicion-absoluta" src="imagenes/favicon.png" alt="">
+      <p xmlns:cc="http://creativecommons.org/ns#" >Oihane Calderón -- Ciclo DAM 2024 - 2025 -  Esta obra está licenciada bajo <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="licencia noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""></a></p>
+    </footer>
+   
+</body>
+</html>

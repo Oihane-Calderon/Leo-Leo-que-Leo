@@ -1,0 +1,114 @@
+<!-- ***************************************
+LENGUAJES DE MARCA Y SISTEMAS DE GESTION DE LA INFORMACIÓN
+UD02 - TAREA EVALUATIVA 02: SITIO WEB
+Oihane Calderón Beramendi
+Fecha : 
+Autoevaluación:  cambiar**************************
+*********************************************
+-->
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="keysword" content="libros, recomendaciones, recomendaci&oacute;n">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeoLeoqueLeo</title>
+    <link rel="icon" type="image/x-icon" href="./imagenes/favicon.PNG">
+    <!--Enlace a hoja de estilos normalize-->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!--Enlace a hoja de estilos propios-->
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+
+  <body>
+    <!--Cabecera -->
+    <header>
+      <img class="logo" src="./imagenes/buho.png" width="170px" alt="Logo de Leo Leo que Lees">      
+      <h2>Leo Leo...¿qué leo?</h2>
+    </header> 
+      
+    <!--Menú de navegación -->
+    <nav>
+      <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="best-sellers.html">Best Sellers</a></li>
+          <li><a href="noticias.html">Noticias</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <!--Creo un section para que me agrupe los 3 bloques (section + main + aside)
+    y los ponga uno tras otro-->
+    <section id="bloque-flex-row">
+
+      <!--*******************Menú lateral izquierdo*******************-->
+      <section class="section-generos">
+
+        <h2>Géneros literarios</h2>
+        <article> <!--el article sólo tiene un elemento, el <a   -->
+          <a href="genero-historica.html" target="_blank" title="Novela Histórica" >
+            <img src="imagenes/historica.jpeg" alt="Novela Histórica" >
+            <h2>Novela histórica</h2>
+          </a>
+        </article> 
+        <article >       
+          <a href="genero-ficcion.html" target="_blank" title="Ciencia ficción" >
+            <img src="imagenes/ficcion.PNG" alt="Ciencia ficción" >
+            <h2>Ciencia ficcion</h2> 
+          </a>
+        </article> 
+        <article>         
+          <a href="genero-negra.html" target="_blank" title="Novela negra, thriller" >
+            <img src="imagenes/negra.jpg" alt="Novela Negra" >
+            <h2>Novela negra</h2>
+          </a>
+        </article> 
+        <article>        
+          <a href="genero-terror.html" target="_blank" title="Terror" >
+            <img src="imagenes/terror.jpg" alt="Terror" >
+            <h2>Genero Terror</h2>
+          </a>
+        </article>
+      </section> <!--fin Menú lateral izquierdo-->
+  
+      <!--**********zona principal**********-->
+      <main class="main-flex-column">
+        <section class="contenedor-noticia-bestseller">
+          <h2>Noticias</h2>
+
+          <!--noticia 1 -->
+          <article>
+              <img src="imagenes/novedades.jfif" alt="últimas novedades libros 2024">
+              <div>
+                  <h3>Últimas novedades libros 2024: La nueva novela de Dolores Redondo</h3>
+                  <p>En los Valles Tranquilos no gusta desenterrar secretos ni revelar verdades. Prepárate para la noche más larga.</p>
+                  <a href="https://www.planetadelibros.com/blog/noticias/20/articulo/dolores-redondo-nuevo-libro"
+                  target="_blank" class="boton">Seguir leyendo</a>
+              </div>
+          </article>    
+          <!--noticia 2 -->
+          <article>
+              <img src="imagenes/agenda.jfif" alt="últimas novedades libros 2024">
+
+              <div> <!--div para agrupar contenidos-->
+                <h3>Próximas presentaciones</h3>
+                <p>Aquí encontrarás las próximas presentaciones de las últimas novedades.</p>
+                <a href="https://www.lafabrica.com/mec-category/presentaciones-de-libros/" target="_blank" class="boton">Seguir leyendo</a>
+              </div>
+          </article>  
+
+        </section>  <!--fin section novedades dentro del main -->  
+      </main>
+
+    </section> <!--fin section agrupación bloque --> 
+    
+    <footer>
+      <img class="posicion-absoluta" src="imagenes/favicon.png" alt="">
+      <p xmlns:cc="http://creativecommons.org/ns#" >Oihane Calderón -- Ciclo DAM 2024 - 2025 -  Esta obra está licenciada bajo <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="licencia noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""></a></p>
+    </footer>
+  
+  </body>
+</html>

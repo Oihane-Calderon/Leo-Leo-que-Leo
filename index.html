@@ -1,0 +1,138 @@
+<!-- ***************************************
+LENGUAJES DE MARCA Y SISTEMAS DE GESTION DE LA INFORMACIÓN
+UD02 - TAREA EVALUATIVA 02: SITIO WEB
+Oihane Calderón Beramendi
+Fecha : 
+Autoevaluación:  cambiar**************************
+*********************************************
+-->
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="keysword" content="libros, recomendaciones, recomendaci&oacute;n">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeoLeoqueLeo</title>
+    <link rel="icon" type="image/x-icon" href="./imagenes/favicon.PNG">
+    <!--Enlace a hoja de estilos normalize-->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!--Enlace a hoja de estilos propios-->
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+
+  <body>
+    <!--Cabecera -->
+    <header>
+      <img class="logo" src="./imagenes/buho.png" width="170px" alt="Logo de Leo Leo que Lees">      
+      <h2>Leo leo...¿qué leo?</h2>
+    </header> 
+      
+    <!--Menú de navegación -->
+    <nav>
+      <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="best-sellers.html">Best Sellers</a></li>
+          <li><a href="noticias.html">Noticias</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <!--
+    Diseño principal de la web usando posicionamiento Flexbox.
+    Creo un section para que me agrupe los 3 bloques (section + main + aside)
+    -->
+    <section id="bloque-flex-row">
+
+      <!--*******************Menú lateral izquierdo*******************-->
+      <section class="section-generos">
+
+        <h2>Géneros literarios</h2>
+        <article> <!--el article sólo tiene un elemento, el <a   -->
+          <a href="genero-historica.html" target="_blank" title="Novela Histórica" >
+            <img src="imagenes/historica.jpeg" alt="Novela Histórica" >
+            <h2>Novela histórica</h2>
+          </a>
+        </article> 
+        <article >       
+          <a href="genero-ficcion.html" target="_blank" title="Ciencia ficción" >
+            <img src="imagenes/ficcion.PNG" alt="Ciencia ficción" >
+            <h2>Ciencia ficcion</h2> 
+          </a>
+        </article> 
+        <article>         
+          <a href="genero-negra.html" target="_blank" title="Novela negra, thriller" >
+            <img src="imagenes/negra.jpg" alt="Novela Negra" >
+            <h2>Novela negra</h2>
+          </a>
+        </article> 
+        <article>        
+          <a href="genero-terror.html" target="_blank" title="Terror" >
+            <img src="imagenes/terror.jpg" alt="Terror" >
+            <h2>Genero Terror</h2>
+          </a>
+        </article>
+      </section> <!--fin Menú lateral izquierdo bloque-flex-row-->
+     
+      <!----------Presentación central------------->
+      <main class="main-index"> 
+        <section>
+          <h2>Y ahora... ¿qué leo?</h2>
+          <article>
+            <img src="imagenes/chica leyendo.jpg" alt="chica leyendo">
+            <div>
+              <p>Uno de los momentos más importantes de leer un libro es elegirlo.</p>
+              <p>¿Pero, cuál leo? Hay tantos...</p>
+              <p>En esta web te damos algunas ideas!
+              Es un portal de recomendaciones de libros diseñado para facilitar 
+              la elección de tu próxima lectura.</p> 
+              <p>Ofrece una amplia selección organizada por géneros como 
+              novela histórica, ciencia ficción, intriga y terror.</p>
+              <p> Las recomendaciones se basan en los libros más vendidos y mejor valorados,
+              y cada ficha incluye un resumen del libro y otros datos que pueden interesarte.
+              Es el sitio ideal para descubrir tu próxima aventura literaria. </p>
+              <p>Te dejamos también unos enlaces a páginas donde podrás comprar tus libros.</p>
+              <br>
+              <p>Tu web de recomendaciones de libros</p>
+            </div>
+          </article>
+        </section>
+      </main>
+
+      <!----------Zona derecha iconos ------------->
+
+      <aside id="contenedor-iconos">
+        <h2 class="titulo-iconos">Dónde comprar</h2>
+        <article class="contenedor-icono">
+          <a href="https://www.casadellibro.com/" target="_blank" title="La casa del libro">
+            <img class="icono" src="imagenes/icono casa del libro.png" alt="La casa del libro">
+          </a> 
+        </article>
+        <article class="contenedor-icono">
+          <a href="https://www.agapea.com/" target="_blank" title="Agapea">
+            <img class="icono" src="imagenes/icono agapea.png" alt="Agapea">
+          </a>
+        </article>
+        <article class="contenedor-icono">
+          <a href="https://www.fnac.com/" target="_blank" title="fnac">
+            <img class="icono"src="imagenes/icono fnac.png" alt="Fnac">
+          </a>
+        </article>
+        <article class="contenedor-icono">
+          <a href="https://www.amazon.es/" target="_blank" title="Amazon">
+            <img class="icono" src="imagenes/icono amazon.png" alt="Amazon">
+          </a>
+        </article>
+        </aside>
+
+    </section> <!--fin bloque secion flex-row-->
+
+    <footer>
+      <img class="posicion-absoluta" src="imagenes/favicon.png" alt="">
+      <p xmlns:cc="http://creativecommons.org/ns#" >Oihane Calderón -- Ciclo DAM 2024 - 2025 -  Esta obra está licenciada bajo <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="licencia noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""></a></p>
+    </footer>
+
+  </body>
+</html>

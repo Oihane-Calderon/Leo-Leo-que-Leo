@@ -1,0 +1,119 @@
+<!-- ***************************************
+LENGUAJES DE MARCA Y SISTEMAS DE GESTION DE LA INFORMACIÓN
+UD02 - TAREA EVALUATIVA 02: SITIO WEB
+Oihane Calderón Beramendi
+Fecha : 
+Autoevaluación:  cambiar**************************
+*********************************************
+-->
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="keysword" content="libros, recomendaciones, recomendaci&oacute;n">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeoLeoqueLeo</title>
+    <link rel="icon" type="image/x-icon" href="./imagenes/favicon.PNG">
+    <!--Enlace a hoja de estilos normalize-->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!--Enlace a hoja de estilos propios-->
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+
+  <body>
+    <!--Cabecera -->
+    <header>
+      <img class="logo" src="./imagenes/buho.png" width="170px" alt="Logo de Leo Leo que Lees">      
+      <h2> Leo Leo ... ¿qué leo?</h2>
+    </header> 
+      
+    <!--Menú de navegación -->
+    <nav>
+      <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="best-sellers.html">Best Sellers</a></li>
+          <li><a href="noticias.html">Noticias</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <!--Creo un section para que me agrupe los 3 bloques (section + main + aside)
+    y los ponga uno tras otro-->
+    <section id="bloque-flex-row">
+
+            <!--*******************Menú lateral izquierdo*******************-->
+      <section class="section-generos">
+
+        <h2>Géneros literarios</h2>
+        <article> <!--el article sólo tiene un elemento, el <a   -->
+          <a href="genero-historica.html" target="_blank" title="Novela Histórica" >
+            <img src="imagenes/historica.jpeg" alt="Novela Histórica" >
+            <h2>Novela histórica</h2>
+          </a>
+        </article> 
+        <article >       
+          <a href="genero-ficcion.html" target="_blank" title="Ciencia ficción" >
+            <img src="imagenes/ficcion.PNG" alt="Ciencia ficción" >
+            <h2>Ciencia ficcion</h2> 
+          </a>
+        </article> 
+        <article>         
+          <a href="genero-negra.html" target="_blank" title="Novela negra, thriller" >
+            <img src="imagenes/negra.jpg" alt="Novela Negra" >
+            <h2>Novela negra</h2>
+          </a>
+        </article> 
+        <article>        
+          <a href="genero-terror.html" target="_blank" title="Terror" >
+            <img src="imagenes/terror.jpg" alt="Terror" >
+            <h2>Genero Terror</h2>
+          </a>
+        </article>
+      </section> <!--fin Menú lateral izquierdo-->
+      
+      <!--**********zona principal**********-->
+    <main class="main-flex-column">
+
+      <section class="contenedor-noticia-bestseller">
+          <h2>Los más vendidos</h2>
+        
+          <!--Best seller 1 -->
+        <article>
+          <img src="imagenes/caratula ahi fuera gritando.png" alt="ahí fuera gritando">
+          <div>
+              <h3>Ahí fuera gritando - Jordab Peele</h3>
+              <p>género: Terror</p>
+              <p><u>Sinopsis:</u>Dos Pasajeros de la Libertad suben a un autobús que los deja varados en una carretera solitaria en Alabama, donde les espera algo realmente inquietante;</p>
+              <a href="pdf/primera_Ahi_fuera_gritando.pdf"
+              target="_blank" class="boton">Leer primeras páginas</a>
+          </div>
+        </article>  
+        <!--Best seller 2 -->
+        <article>
+          <img src="imagenes/caratula NH mapa nuevo mundo.png" alt="el mapa de un nuevo mundo">
+          <div>
+              <h3>El mapa de un nuevo mundo   -  Luis Zueco</h3>
+              <p>género: Novela histórica</p>
+              <!--<p><u>Sinopsis:</u> Año 1496. Tras conseguir la unión de Castilla y Aragón, conquistar Granada y las Islas Canarias, Isabel la Católica se encuentra en los años finales de su vida, pero tambien en los que ostenta más poder. Un poder y un legado que no está dispuesta a perder, ni siquiera despues su muerte.-->
+              <p>  Esta novela narra los años que cambiaron para siempre el curso de la historia. Cuando cada barco que regresaba a puerto podía transformar el mundo, un mapa se convertía en el bien más preciado de una corona y las hazañas de un viajero eran capaces de incendiar un imperio.</p>
+              <a href="https://www.google.fr/books/edition/El_mapa_de_un_mundo_nuevo/6VUOEQAAQBAJ?hl=es&gbpv=1&pg=PT6&printsec=frontcover"
+              target="_blank" class="boton">Leer primeras páginas </a>
+          </div>
+        </article>    
+        
+
+      </section>
+    </main>
+
+  </section>
+    
+  <footer>
+    <img class="posicion-absoluta" src="imagenes/favicon.png" alt="">
+    <p xmlns:cc="http://creativecommons.org/ns#" >Oihane Calderón -- Ciclo DAM 2024 - 2025 -  Esta obra está licenciada bajo <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="licencia noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""></a></p>
+  </footer>
+  
+</body>
+</html>

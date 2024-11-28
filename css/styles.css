@@ -1,0 +1,482 @@
+/*
+**************************
+Autor: Oihane Calderón Beramendi
+Módulo: DAM
+UD: 2
+Tarea: WEB SEMANTICA 
+Fecha: 27/11/2024
+
+Reflexion: https://drive.google.com/file/d/1EpjgGN8NOBPAX0KlyCEwTfqV0kzCsUPc/view?usp=sharing
+**************************
+*
+/*************************Formato para toda la página*************************/
+html{
+   position: relative;
+    margin: 0;
+    padding: 0%;
+    font-size: 62.5%;   
+    
+}
+
+/*************************Formato para el body********************************/
+body {
+    background-image: url(/imagenes/fondo.jpeg);
+    background-size: cover; 
+    background-position: right; 
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+    
+} 
+
+/****************************Estilo para cabecera********************************/
+/*Posicionamiento flexbox*/
+header {
+    display: flex;
+    padding: 0px;
+    width: 60%; /*cambio*/
+    height: 11%;
+    /*para que el degradado se vea bien en otros exploradores meto estas líneas: */
+    background: -moz-linear-gradient(left, #dfc99e 50%, rgba(250,250,250,255) 50%); /*para Firefox*/
+    background: -webkit-linear-gradient(left, #dfc99e 50%, rgba(250,250,250,255) 90%); /*en crhome*/
+    background: -moz-linear-gradient(left, #dfc99e 40%, rgba(250,250,250,255) 60%); /*en iexplorer*/
+    background: -o-linear-gradient(left, #dfc99e 40%, rgba(250,250,250,255) 60%); /*en opera*/
+}
+
+/*Formato para el texto h2 dentro del header*/
+header h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #2196b5;
+    
+}
+header img {
+    border-radius: 10px;
+}
+
+/***************************** Estilos para menú navegación************************/
+
+/*posicionamiento flexbox en filas y elementos centrados*/
+nav {
+    font-size: 2.2em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+nav a {
+    margin: 0;                     
+    padding: 0;   
+    color: #8d6443;
+    display: flexbox;                
+    text-decoration: none;   /*Quita el subrayado al enlace*/
+}
+
+nav li {
+    list-style-type: none;         /* Elimina los puntos de lista */
+    margin-left: 20px;
+    padding: 5px;
+    border: 1px solid #8d6443;
+    border-radius: 10px;
+    box-shadow: #64462c 1px 2px 1px;
+    -webkit-transition: -webkit-transform 0.3s;
+    background-color:  #FFFFFF;
+}
+
+/*Los elementos de la lista aumentan el tamaño al pasar con el cursor por encima*/
+nav li:hover {    
+    -webkit-transform: scale(1.2);
+}
+
+/*posicionamiento Flexbox para que se coloquen uno tras otro horizontalmente*/
+nav ul {
+    display: flex;
+}
+
+/****************************Posicionamiento flexbox en filas para las section de las webs (contenedor de géneros, el main, etc) **********/
+#bloque-flex-row {
+    display: flex;
+    flex-direction: row; 
+}
+
+/*******************************Estructura de CUERPOS PRINCIPALES (MAIN) *****************/ 
+
+/******En la presentación (index.html)*********/
+.main-index {
+    width: 40%;
+    border: 1px dashed #8d6443;
+    border-radius: 10px;
+    margin:  0px 15px 15px 15px;
+    padding: 20px;
+    text-align: justify;
+    font-size: 2.3rem;
+}
+
+.main-index img{
+    float: left;
+    margin: 30px;
+    width: 25%;
+    height: auto;
+}
+
+main h2 {
+   text-align: center;
+}
+
+/*********Estilo para el main de las 4 webs de géneros*********/
+.main-genero {
+    width: 50%;
+    border: 1px dashed #8d6443;
+    border-radius: 10px;
+    margin: 0px 15px 15px 15px;
+    padding: 20px;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+}
+
+/**********En la web noticias y bestsellers**********/
+.main-flex-column { 
+    width: 65%;
+    border-radius: 10px;
+    margin: 0px 15px 15px 15px;
+    padding: 10px;
+    text-align: justify;
+    display: flex;
+    align-content: center;
+}
+
+/************ En las web detallse libros********************/
+.main-detalle{
+    width: 60%;
+    border: 1px dashed #8d6443;
+    border-radius: 10px;
+    margin: 25px;
+    padding: 2%;
+    text-align: justify;
+}
+
+.main-detalle-construccion{
+    width: 60%;
+    border: 1px dashed #8d6443;
+    border-radius: 10px;
+    margin: 1% 5% 5% 5%;
+    padding: 2%;
+    text-align: justify;
+}
+
+.main-detalle section {
+    display: flex;
+}
+
+.main-detalle article { /*******revisar******/
+    margin-bottom: 5%;
+}
+
+.main-detalle img {
+    width: 10%;
+    float: left;
+    border-radius: 10px;
+    margin: 30px;
+    padding: 5px;
+    border: 1px solid #8d6443;
+    box-shadow: 5px 5px 15px #64462c;
+    background-color: #2196b5;
+}
+
+.main-detalle h2 {
+   font-size: 6rem;
+   padding-top: 15px;
+   margin: 0;
+}
+
+/**********************Estilo para barra lateral izquierda (generos literarios)  **************/
+
+/*Posicionamiento Flexbox, elementos en columnas, de arriba a abajo*/
+.section-generos {
+    width: 20%;
+    border: 1px dashed #8d6443;
+    border-radius: 10px;
+    margin: 0px 15px 15px 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column; 
+    align-items: normal;
+} 
+
+/*Formato para cada articulo (subconenedor) del contenedor section-generos*/
+.section-generos article {
+    color: white;
+    border: 1px solid #64462c;
+    margin-bottom: 3%; /*espacio entre un articulo y otro*/
+    border-radius: 10px;
+    margin: 0px 15px 15px 15px;
+    padding: 10px;
+    transition: filter 0.3s ease; /* Suaviza el efecto */
+}
+
+/*Posicionamiento con flexbox, los elementos quedan centrados dentro del article*/
+.section-generos article a {
+    display: flex;
+    text-align: center; 
+    align-items: center;
+}
+
+/* Cambia a gama de gris cuando pasas el cursor por encima*/
+.section-generos article:hover {
+    filter: grayscale(100%); 
+    background: #f3ebda;
+}
+
+ /*Posicionamiento float, imagen a la izda y texto envuelve a la derecha */ 
+ .section-generos article a img{ 
+    float: left;
+    max-width: 100%;
+    width: 40%;
+    border: 1px dashed #8d6443;
+    border-radius: 10px;
+    margin: 1%;
+    padding: 2%;
+}
+
+.section-generos article a h2 { 
+    margin-top: 0%;
+    color: #64462c;
+    font-size: 2.3rem; 
+}
+
+/*********************** Estilos para barra lateral derecha de iconos - index.html*********/
+/*Posicionamiento flex*/
+
+/*id*/
+#contenedor-iconos{
+    flex-basis: 15%;
+    border: 1px dashed #8d6443;
+    border-radius: 10px;
+    margin: 0px 15px 15px 15px;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    flex-wrap: wrap; /*Si colapsen las líneas  se irán a la línea de abajo*/
+    align-content: center; 
+    justify-content: space-around;
+}
+
+/*clase*/
+.contenedor-icono {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 5px;
+    
+}
+
+.icono {
+   display: flex;
+   justify-content: right;
+   align-items: center;
+   padding: 0%;
+   width: 100%;
+   height: 100%;
+}
+
+.titulo-iconos {
+    width: 100%;
+    text-align: center;
+}
+
+/*********************** Estilos para las noticias y best sellers****************/
+/*estructura de noticias y bestselles en columnas*/
+.contenedor-noticia-bestseller {
+   width: auto;
+   display: flex;
+   flex-direction: column;
+
+}
+
+/*imagen float, el texto lo rodeará por la derecha*/
+.contenedor-noticia-bestseller img {
+    width: 10%;
+    float: left;
+    padding: 20px;
+  
+}
+.contenedor-noticia-bestseller article {
+    width: 65%;
+    border: 1px solid #8d6443;
+    border-radius: 10px;
+    margin: 20px 20px 5px 20px;
+    padding: 20px;
+   
+}
+.contenedor-noticia-bestseller h2 {
+    text-align: left;
+    margin-left: 40px;
+   
+}
+ 
+/*********************** Estilos para el contenedor tipo grid de las carátulas*********************/
+
+/*uno las dos primeras celdas para el título*/
+.unir2celdasrow {
+    height: 40px;
+    grid-column-start: 1; /*une las dos primeras celdas*/
+    grid-column-end: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Display grid, se colocarán en 2 filas, dos columnas*/
+.contenedor-grid-caratulas {
+    width: 50%;
+    height: auto;
+    /*desde el contenedor padre damos características a los hijos (artículos)*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+     gap: 5px 5px;
+}
+
+.contenedor-grid-caratulas article a img { 
+    border-radius: 10px;
+    -webkit-transition: -webkit-transform 0.3s;
+    width: 90%;
+    height: 90%;
+    border: 1px solid black;
+    box-shadow: 7px 2px 3px #8d6443;
+    margin: 0;
+}
+
+.contenedor-grid-caratulas img:hover {
+    -webkit-transform: scale(1.1);
+  }
+
+/***Estilo para los botones en general*****/
+.boton{
+    background-color: #fcf1e7;
+    width: auto;
+    height: 12px;
+    border: 1px  #faf2eb;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 10px;
+    transition: 0.4s;
+    float: right; /* se colocan a la detecha*/
+}
+
+.caja-fecha {
+    width: auto;
+    padding: 12px;
+    margin: 10px;
+    font-size: 2.2rem;
+}
+.boton:hover {
+    color: black;
+    background-color: #f3d0b3;
+    border: 1px solid #f7ece3;
+    border-radius: 10px;
+}
+
+
+/***************************************Estilos para el formulario**********************/
+/*Une de forma visual los elementos*/
+fieldset{
+    width: 50%;
+    height: 100%;
+    border: 1px dashed #8d6443;
+    border-radius: 10px;
+}
+
+.formulario-flex {
+    display: flex;
+    justify-content: center;
+}
+  
+.form-item {
+    width: 95%;
+    padding: 10px;
+    border: 0px;
+    border-radius: 8px;
+    background-color: #dfc99e;
+ }
+ 
+ /*formato en concreto para el boton dentro del formulario*/                               
+form .boton {
+    float: right;
+    min-height: 40px;
+    min-width: 40px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+/*********************** Estilos para el footer*********************/
+footer {
+    position: relative;
+    color: rgb(114, 111, 111);
+    /*para que el degradado se vea bien en otros exploradores meto estas líneas: */
+    background: -moz-linear-gradient(left, #dfc99e 60%, rgba(250,250,250,255) 30%); /*para Firefox*/
+    background: -webkit-linear-gradient(left, #dfc99e 60%, rgba(250,250,250,255) 98%); /*en crhome*/
+    background: -moz-linear-gradient(left, #dfc99e 60%, rgba(250,250,250,255) 60%); /*en iexplorer*/
+    background: -o-linear-gradient(left, #dfc99e 40%, rgba(250,250,250,255) 60%); /*en opera*/
+    text-align: center;
+    bottom: 0;       /* Posición en la parte inferior */
+    left: 0;         /* Alineado al borde izquierdo */
+    width: 100%;     /* Ocupa todo el 100% del ancho de la pantalla */
+    margin-top: 10%;
+    margin-inline-end: 50px; 
+    color: #fff;
+    text-align: left;
+}
+
+footer p{
+    padding-left: 10%;
+    padding-top: 3x;
+    padding-bottom: 3px;
+    font-size: 1.7rem;
+}
+
+/* Estilo para posicionamiento absoluto. Debe estar en un contenedor no static (por defecto) */
+.posicion-absoluta {
+    position: absolute;
+    top: 20%;
+    left: 1%;
+    width: 1%;
+}
+
+/*********************** Estilos para etiquetas básicas*********************/
+h2 {
+    font-family: papyrus, fantasy, Arial, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.7rem; /*sería como un 257*/
+    color: #2196b5;
+}  
+
+p {
+
+    font-size: 2.3rem; /*hace el cálculo sobre 10 px (62,5%)*/
+}
+
+h3 {
+    font-size: 2.1rem ;
+}
+.posicion-relativa {
+    width: 50%; /*del contenedeor padre, el body*/
+    text-align: center;
+   padding-left: 50px;
+   
+}
+
+/*Posicionamiento fixed para la flecha */
+.fijado {
+	position: fixed;
+	bottom: 10%;
+	right: 30%;
+	height: 4rem;
+	width: 4rem;
+	
+}

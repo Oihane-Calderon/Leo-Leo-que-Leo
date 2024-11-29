@@ -37,7 +37,6 @@ header {
     display: flex;
     padding: 0px;
     width: 60%; 
-    height: 11%;
     /*para que el degradado se vea bien en otros exploradores meto estas líneas: */
     background: -moz-linear-gradient(left, #dfc99e 50%, rgba(250,250,250,255) 50%); /*para Firefox*/
     background: -webkit-linear-gradient(left, #dfc99e 50%, rgba(250,250,250,255) 90%); /*en crhome*/
